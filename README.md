@@ -1,2 +1,2 @@
 # Todo
-Todo web application using Html, CSS and JavaScript
+Todo web application using HTML, CSS and JavaScript.
