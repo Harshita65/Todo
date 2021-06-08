@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+
+
+body{
+  background-image:url("todo.jpg") ;
+  overflow:scroll;
+  background-repeat:repeat;
+}
+
+img{
+  height: 35px;
+  width:28px;
+  border-radius:70%;
+  background-color: inherit;
+}
+
+h1{
+  color:Gray;
+  font-size: 36px;
+}
+
+.exercise{
+ margin-left:0px;
+  background-color:white;
+  border-radius:50%;
+  cursor:pointer;
+  height:15px;
+  width:10px;
+  margin-top:10px;
+}
+
+h3{
+  margin:0;
+  padding:0;
+  color:green;
+  padding-top: 8px;
+  cursor:pointer;
+  display:inline-block;
+  padding-left:5px;
+}
+
+#exercise{
+  font-style:italic;
+}
+
+.container{
+  display:grid;
+  grid-template-columns: auto;
+  gap:5px;
+}
+
+.option{
+  margin-left:0px;
+  display:flex;
+  cursor:move;
+}
+
+.option.over{
+  border:3px dotted #666;
+}
+
+#clear{
+  color:black;
+  font-weight:bold;
+  font-size:18px;
+}
+
+#clear:hover{
+  color:grey;
+}
+
+#more{
+  float:right;
+  padding-top:0px;
+  font-size:20px;
+}
+
+.sidenav{
+  height: 50%;
+  width: 0;
+  position: fixed;
+  z-index:1;
+  top:0;
+  right:0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top:20px;
+}
+
+.sidenav a{
+  padding-left: 15px;
+  padding-top: 25px;
+  padding-right:8px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #c7c1c1;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover{
+  color: #E9967A;
+}
+
+.sidenav.closebtn{
+
+  top:0;
+  right:5px;
+  font-size:20px;
+  margin-left:20px;
+}
+@media screen and (max-height: 450px){
+  .sidenav {padding-top: 15px;}
+  .sidenav a{font-size: 18px;}
+}
+
+/*.hide{
+  display:none;
+}*/
+
+.drag-over{
+  border: dashed 3px grey;
+}
+
+.fa-eraser{
+  position: relative;
+  top:10px;
+  left: 5px;
+  size: 28px;
+  color:black;
+  cursor: pointer;
+}

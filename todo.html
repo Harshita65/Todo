@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>TODO</title>
+  <span style="font-size:20px;cursor:pointer;float:right;" onclick="opennav()">&#9776; </span>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-auth.js"></script>
+</head>
+  <body>
+
+    <h1>Todo</h1>
+      <ul  id="tasks" class = "container" >
+  </ul>
+    <div><i id="add" class="fa fa-plus-circle"  style="font-size:48px;color:salmon;" onClick="task()"></i></div>
+    <div id = "mysidenav" class = "sidenav">
+      <a href = "javascript:void(0)" class="closebtn" onclick ="closenav()" style="cursor:pointer;float:right;top:0;">&times;</a>
+      <a href = "https://calendar.google.com/calendar/u/0/r">Calendar</a>
+      <a href = "#">Change theme</a>
+    </div>
+<p id = "fun"></p>
+    <script type="text/javascript" src="todo.js"></script>
+    
+  </body>
+
+  </html>
